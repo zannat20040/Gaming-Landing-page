@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+.fix-width{
+    width: 80%;
+    margin: auto;
+}
 
 header {
     background: #FFF;
@@ -12,7 +16,7 @@ header {
 
 header .navigation {
     display: grid;
-    grid-template-columns: 35% 55%;
+    grid-template-columns: 30% 70%;
     justify-content: center;
 }
 
@@ -44,11 +48,11 @@ header .navigation ul li a {
     font-size: 18px;
 }
 
-header .navigation ul li .item {
-    display: grid;
-    grid-template-columns: 55% auto auto;
-    gap: 24px;
+header .navigation ul .item {
+    display: flex;
+    gap: 12px;
     border-radius: 8px;
+    justify-content: space-between;
     padding: 18px 24px;
     background: rgba(11, 2, 35, 0.10);
 }
@@ -64,4 +68,55 @@ header .navigation ul li a i.fa-tiktok {
 
 span {
     color: #FF42A5;
+}
+
+
+/* banner section */
+.banner{
+    background-image: url('./images/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.banner-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-container p {
+    font-size: 38px;
+    font-weight: 600;
+}
+.banner-container h2 {
+    font-size: 76px;
+    font-weight: 800;
+}
+.banner-container ul li {
+    list-style: none;
+}
+.banner-container ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    color: #534C64;
+    /* font-size: 16px; */
+    font-weight: 500;
+    text-decoration: none;
+}
+.banner-container img{
+    max-width: 100%;
+    height: auto;
+}
+button {
+    border-radius: 48px;
+    background: #4EC5F7;
+    margin: 20px 7px 0 0;
+    padding: 16px 40px;
+    border: 0;
+    color: #FFF;
+    font-weight: 600;
+}
+.banner-left{
+    padding: 100px 0;
 }
