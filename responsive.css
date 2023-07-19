@@ -1,0 +1,12 @@
+/* Query for Medium device */
+
+@media screen and (max-width:992px) and (min-width:640px) {
+    header .navigation {
+        grid-template-columns: 90%;
+    }
+    header .navigation .logo {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+}
