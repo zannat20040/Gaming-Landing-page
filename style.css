@@ -214,35 +214,26 @@ margin-top: 32px;
 
 
 /* install section */
-
-
-.install-container {
-    grid-template-columns: 40% 20% auto;
-}
-
-.install-left h2,
-.install-left p {
+.install-left{
     text-align: end;
 }
-
-.smallpic {
-    position: relative;
-    bottom: 120px;
-    right: 93px;
-    width: 50%;
-
+.install-container.grid{
+    grid-template-columns: 40% 0% 40%;
+    justify-content: space-evenly;
+    text-align:center;
+    
 }
 
-.install-right h2,
-.install-right p {
-    text-align: left;
+section.banner-right
+img.smallpic {
+    position: absolute;
+    bottom: -125px;
+    right: 62%;
+    width: 48%;
 }
-
-.smallpicbottom {
+section.banner-right {
+    align-items: center;
     position: relative;
-    bottom: 120px;
-    width: 50%;
-    left: 280px;
 }
 
 /* game type section */

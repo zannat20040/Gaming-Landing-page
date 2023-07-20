@@ -127,7 +127,7 @@
     }
 }*/
 
-@media screen and (max-width:834px) {
+@media screen and (max-width:895px) {
 
     header {
         justify-content: center;
@@ -180,7 +180,28 @@
     .card p{
         text-align: center;
     }
-
+    .install-container.grid {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+    .install-left{
+        text-align: center;
+        margin-bottom: 74px;
+        margin-top: 120px;
+    }
+    section.banner-right img.smallpic {
+        bottom: -63px;
+        left: 0%;
+        width: 38%;
+    }
+    section.banner-right img.bigpic {
+        
+        width: 70%;
+    }
+    
 }
 
 @media screen and (max-width:536px) {
