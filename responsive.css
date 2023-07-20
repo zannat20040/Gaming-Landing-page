@@ -127,6 +127,11 @@
     }
 }*/
 
+/* @media screen and (max-width:1308px) {
+    .game{
+        width: 173px;
+    }
+} */
 @media screen and (max-width:895px) {
 
     header {
@@ -204,7 +209,13 @@
     
 }
 
-@media screen and (max-width:536px) {
+@media screen and (max-width:789px){
+    
+    .game {
+        width: 224px;
+    }
+}
+@media screen and (max-width:532px) {
     .menu {
         flex-direction: column;
         gap: 20px;
@@ -249,5 +260,10 @@
         justify-content: center;
 
     }
+ 
+    .game {
+        width: 155px;
+    }
+
 
 }
