@@ -1,7 +1,17 @@
+/* shared css*/
+
 * {
     margin: 0;
     bottom: 0;
     font-family: 'Work Sans', sans-serif;
+}
+
+.clr-white {
+    color: white;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 img {
@@ -24,7 +34,6 @@ img {
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 45%);
-    /* grid-template-columns: 1fr; */
     justify-content: space-around;
     align-items: center;
 }
@@ -46,15 +55,17 @@ img {
     border: 0;
 
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
+
 .pink-clr {
     color: #FF42A5;
 }
 
-.pink-sky {
-    color: rgba(78, 197, 247, 1);
+.sky-clr {
+    background-color: rgba(78, 197, 247, 1);
 
 }
 
@@ -64,15 +75,20 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.m-24{
+
+.m-24 {
     margin-top: 24px;
 }
-.mt-120{
+
+.mt-120 {
     margin-top: 120px;
 }
-.font-48{
+
+.font-48 {
     font-size: 48px;
 }
+
+
 /* header */
 header {
     display: grid;
@@ -121,7 +137,6 @@ menu {
 
 .banner-container .banner-left p {
     color: #0B0223;
-    /* font-size: 48px; */
     font-weight: 600;
 }
 
@@ -140,55 +155,65 @@ menu {
 
 /* about us */
 .about-container {
-   padding: 100px 0;
+    padding: 100px 0;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
+
 .about-right {
     text-align: right;
 }
-.about-right h2{
-    /* font-size: 48px; */
-}
+
 .about-right blockquote {
     font-size: 24px;
     font-weight: 600;
     margin-top: 10px;
 }
+
 .about-right button {
-margin-top: 32px;
+    margin-top: 32px;
 }
 
 
 /* card -sec */
 
-.card-container.grid{
+.card-container.grid {
     grid-template-columns: 90%;
 }
 
-.card-img{
+.card-img {
     position: relative;
     display: inline-block;
+
 }
-.card-img>img{
+
+/* .cardimg {
+    width: 339px;
+    height: 394px;
+} */
+
+.card-img img {
     display: block;
     max-width: 100%;
     height: auto;
 
 }
-.card{
+
+.card {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 48px;
     gap: 54px;
 }
-.card-text{
+
+.card-text {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 64px;
 }
+
 .card .hover-sec {
     position: absolute;
-    height: 76%;
+    height: 84%;
     width: 100%;
     background: #000000ba;
     text-align: center;
@@ -203,34 +228,37 @@ margin-top: 32px;
     opacity: 0;
     transition: .5s;
 }
-.hover-sec p{
+
+.hover-sec p {
     color: #FF42A5;
     margin-top: 16px;
 }
-.card-img:hover .hover-sec{
+
+.card-img:hover .hover-sec {
     opacity: 1;
 }
 
 
 
 /* install section */
-.install-left{
+.install-left {
     text-align: end;
 }
-.install-container.grid{
+
+.install-container.grid {
     grid-template-columns: 40% 0% 40%;
     justify-content: space-evenly;
-    text-align:center;
-    
+    text-align: center;
+
 }
 
-section.banner-right
-img.smallpic {
+section.banner-right img.smallpic {
     position: absolute;
     bottom: -125px;
     right: 62%;
     width: 48%;
 }
+
 section.banner-right {
     align-items: center;
     position: relative;
@@ -246,18 +274,18 @@ section.banner-right {
     display: flex;
     flex-wrap: wrap;
     grid-template-columns: repeat(5, auto);
-    text-align: center;
     justify-content: space-around;
 
 }
 
-.game-sec{
+.game-sec {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 
 }
+
 .game {
     font-size: 14px;
-    width: 232px;
+    width: 19%;
     margin-top: 28px;
     display: flex;
     align-items: center;
@@ -266,13 +294,18 @@ section.banner-right {
     border-radius: 50px;
     padding: 5px;
     transition: .5s;
-background: #FFF;
+    background: #FFF;
 }
-.game:hover{
+
+.game:hover {
     border: 2px solid #FF42A5;
 }
 
 /* footer section */
+.footer-sec {
+    margin: auto;
+    width: 90%;
+}
 
 footer {
     text-align: center;
@@ -285,6 +318,7 @@ footer {
     justify-content: center;
     margin: 50px 0 20px 0;
     gap: 60px;
+    padding: 0
 }
 
 .bottom-menu ul li {
@@ -294,10 +328,6 @@ footer {
 .bottom-menu ul li a {
     color: #FFF;
     text-decoration: none;
-}
-
-.justify-center {
-    justify-content: center;
 }
 
 .bottom-menu ul li i {
@@ -312,8 +342,4 @@ footer {
 
 small {
     margin-top: 25px;
-}
-
-.clr-white {
-    color: white;
 }
