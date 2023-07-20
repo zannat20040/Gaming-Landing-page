@@ -1,6 +1,21 @@
 /* Query for Medium device */
 
 @media screen and (max-width:992px) {
+    /*  Header start*/
+    header {
+        justify-content: center;
+    }
+    nav.grid{
+        grid-template-columns: 1fr!important;
+    }
+    .menu {
+        margin-top: 50px;
+    }
+    .logo {
+        justify-content: center;
+    }
+   
+    /* header finish */
     header .navigation {
         grid-template-columns: 90%;
     }
