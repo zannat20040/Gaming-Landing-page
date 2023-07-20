@@ -5,6 +5,10 @@
     bottom: 0;
     font-family: 'Work Sans', sans-serif;
 }
+.fix-width{
+    width: 80%;
+    margin: 0 auto ;
+}
 
 .clr-white {
     color: white;
@@ -128,11 +132,13 @@ header nav {
 menu {
     padding: 0;
 }
-
-.banner-container {
-    height: 700px;
+.banner-bg{
     background-image: url('./images/Group\ 14.png');
     background-repeat: no-repeat;
+    background-position: top left;
+}
+.banner-container {
+    height: 700px;
 }
 
 .banner-container .banner-left p {
@@ -262,7 +268,7 @@ section.banner-right {
 /* game type section */
 
 .game-container {
-    width: 94%;
+    /* width: 94%; */
     margin: auto;
     margin-top: 12%;
     padding: 120px 0;
@@ -280,7 +286,7 @@ section.banner-right {
 
 .game {
     font-size: 14px;
-    width: 19%;
+    width: 17%;
     margin-top: 28px;
     display: flex;
     align-items: center;
