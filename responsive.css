@@ -148,10 +148,13 @@
     .banner-container .banner-left p {
         font-size: 30px;
     }
-.common-text{
-    font-size: 14px;
-}
-    .banner-container .banner-left h2, .about-right h2 {
+
+    .common-text {
+        font-size: 14px;
+    }
+
+    .banner-container .banner-left h2,
+    .about-right h2 {
         font-size: 40px;
     }
 
@@ -161,12 +164,21 @@
         font-size: 14px;
         margin-bottom: 10px;
     }
+
     .about-container.grid {
         height: auto;
         margin-top: 40px;
     }
+
     .about-right blockquote {
         font-size: 18px;
+    }
+
+    .card{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card p{
+        text-align: center;
     }
 
 }
@@ -191,21 +203,30 @@
     .banner-container {
         background: none;
     }
-    .banner-left{
+
+    .banner-left {
         order: 2;
     }
+
     .banner-container .banner-right {
         width: 75%;
         margin: auto;
     }
+
     .about-right {
         text-align: center;
         width: 86%;
         margin: auto;
         margin-top: 65px;
     }
+
     .about-container.grid {
         grid-template-columns: 1fr;
+    }
+    .card{
+        grid-template-columns: 74%;
+        justify-content: center;
+
     }
 
 }

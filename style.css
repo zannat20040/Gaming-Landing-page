@@ -46,7 +46,9 @@ img {
     border: 0;
 
 }
-
+.text-center{
+    text-align: center;
+}
 .pink-clr {
     color: #FF42A5;
 }
@@ -64,6 +66,12 @@ img {
 }
 .m-24{
     margin-top: 24px;
+}
+.mt-120{
+    margin-top: 120px;
+}
+.font-48{
+    font-size: 48px;
 }
 /* header */
 header {
@@ -113,7 +121,7 @@ menu {
 
 .banner-container .banner-left p {
     color: #0B0223;
-    font-size: 48px;
+    /* font-size: 48px; */
     font-weight: 600;
 }
 
@@ -139,7 +147,7 @@ menu {
     text-align: right;
 }
 .about-right h2{
-    font-size: 48px;
+    /* font-size: 48px; */
 }
 .about-right blockquote {
     font-size: 24px;
@@ -150,56 +158,59 @@ menu {
 margin-top: 32px;
 }
 
-/* card section */
 
-.card-container {
-    margin-top: 120px;
-    margin-bottom: 120px;
-    text-align: center;
+/* card -sec */
+
+.card-container.grid{
+    grid-template-columns: 90%;
 }
 
-.card-container .card {
+.card-img{
+    position: relative;
+    display: inline-block;
+}
+.card-img>img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+.card{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    position: relative;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 48px;
+    gap: 54px;
 }
-
-.card-img p {
-    text-align: start;
+.card-text{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 64px;
 }
-
-.card-img img {
-    position: relative;
-}
-
-.hover-sec {
-    height: 76%;
-    width: 23%;
-    background: #000000cc;
-    text-align: center;
+.card .hover-sec {
     position: absolute;
-    bottom: 95px;
-    border: 2px solid #FF42A5;
-    border-radius: 11px;
+    height: 76%;
+    width: 100%;
+    background: #000000ba;
+    text-align: center;
     display: flex;
+    top: 0;
+    left: 0;
     flex-direction: column;
+    border-radius: 15px;
+    border: 3px solid #FF42A5;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     opacity: 0;
-}
-
-.card-img:hover .hover-sec {
-    opacity: 1;
     transition: .5s;
 }
-
-.hover-sec p {
-    text-align: center;
+.hover-sec p{
     color: #FF42A5;
-    font-weight: 500;
+    margin-top: 16px;
 }
+.card-img:hover .hover-sec{
+    opacity: 1;
+}
+
 
 
 /* install section */
