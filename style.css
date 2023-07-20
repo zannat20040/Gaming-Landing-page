@@ -10,9 +10,10 @@ img {
 }
 
 .common-text {
-    color: #3C354F;
+    color: #534C64;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
+    line-height: 22px;
 }
 
 .gamer-text {
@@ -23,6 +24,7 @@ img {
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 45%);
+    /* grid-template-columns: 1fr; */
     justify-content: space-around;
     align-items: center;
 }
@@ -33,10 +35,36 @@ img {
 
 }
 
-.pink-clr{
+.primebtn {
+    padding: 21px 40px;
+    border-radius: 48px;
+    background-color: #FF42A5;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 0;
+
+}
+
+.pink-clr {
     color: #FF42A5;
 }
 
+.pink-sky {
+    color: rgba(78, 197, 247, 1);
+
+}
+
+.purple-text {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.m-24{
+    margin-top: 24px;
+}
 /* header */
 header {
     display: grid;
@@ -70,93 +98,56 @@ header nav {
     justify-content: end;
 }
 
-.menu ul li {
-    list-style: none;
-}
-
-.menu ul li a {
-    text-decoration: none;
-}
 
 /* banner section */
-.banner {
+
+menu {
+    padding: 0;
+}
+
+.banner-container {
+    height: 700px;
     background-image: url('./images/Group\ 14.png');
     background-repeat: no-repeat;
-    background-size: contain;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.banner-container p {
-    font-size: 38px;
+.banner-container .banner-left p {
+    color: #0B0223;
+    font-size: 48px;
     font-weight: 600;
 }
 
-.banner-container h2 {
-    font-size: 76px;
+.banner-container .banner-left h2 {
+    font-size: 95px;
     font-weight: 800;
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
 }
 
-.banner-container ul li {
-    list-style: none;
+.banner-container .banner-left .banner-icon {
+    margin: 24px 0 40px 0;
+    display: grid;
+    grid-template-columns: 4% auto;
+    gap: 17px 12px;
 }
 
-.banner-container ul li a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
-    color: #534C64;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-
-button {
-    border-radius: 48px;
-    background: #4EC5F7;
-    margin: 20px 7px 0 0;
-    padding: 16px 40px;
-    border: 0;
-    color: #FFF;
-    font-weight: 600;
-}
-
-.pinkbtn {
-    background: #FF42A5;
-}
-
-.banner-left {
-    padding: 100px 0;
-}
 
 /* about us */
-.about {
+.about-container {
+   padding: 100px 0;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
-
-.about-container {
-    grid-template-columns: 55% 43%;
-    padding: 50px 0;
-}
-
 .about-right {
     text-align: right;
 }
-blockquote {
-    color: #534C64;
-    font-size: 20px;
-    font-weight: 700;
+.about-right h2{
+    font-size: 48px;
+}
+.about-right blockquote {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.about-right button {
+margin-top: 32px;
 }
 
 /* card section */
@@ -269,11 +260,13 @@ blockquote {
     gap: 10px;
     justify-content: center;
 }
-.game-type ul li:hover{
-    border: 2px solid #FF42A5 ;
+
+.game-type ul li:hover {
+    border: 2px solid #FF42A5;
 
 }
-.game-type .bottom-list{
+
+.game-type .bottom-list {
     margin-top: 30px;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
@@ -290,7 +283,7 @@ blockquote {
 
 /* footer section */
 
-footer{
+footer {
     text-align: center;
     background-color: rgba(11, 2, 35, 1);
     padding: 120px 0;
@@ -300,28 +293,36 @@ footer{
     display: flex;
     justify-content: center;
     margin: 50px 0 20px 0;
-    gap:60px;
+    gap: 60px;
 }
-.bottom-menu ul li{
+
+.bottom-menu ul li {
     list-style: none;
 }
-.bottom-menu ul li a{
+
+.bottom-menu ul li a {
     color: #FFF;
-text-decoration: none;
+    text-decoration: none;
 }
-.justify-center{
+
+.justify-center {
     justify-content: center;
 }
-.bottom-menu ul li i{
+
+.bottom-menu ul li i {
     color: white;
     font-size: 25px;
 }
-.bottom-menu ul li .ash-clr{
-    color: rgba(255, 255, 255, 0.60);;
+
+.bottom-menu ul li .ash-clr {
+    color: rgba(255, 255, 255, 0.60);
+    ;
 }
-small{
+
+small {
     margin-top: 25px;
 }
-.clr-white{
+
+.clr-white {
     color: white;
 }

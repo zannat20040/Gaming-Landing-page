@@ -1,7 +1,7 @@
-/* Query for Medium device */
+/*Query for Medium device
 
 @media screen and (max-width:992px) {
-    /*  Header start*/
+    /*  Header start
     header {
         justify-content: center;
     }
@@ -15,7 +15,7 @@
         justify-content: center;
     }
    
-    /* header finish */
+    /* header finish 
     header .navigation {
         grid-template-columns: 90%;
     }
@@ -50,7 +50,7 @@
 }
 
 
-/* Query for small device */
+/* Query for small device 
 
 @media screen and (max-width:752px) {
     header .navigation ul {
@@ -125,4 +125,87 @@
     .banner-right img{
         width: 65%;
     }
+}*/
+
+@media screen and (max-width:834px) {
+
+    header {
+        justify-content: center;
+    }
+
+    nav.grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .banner-container .banner-left p {
+        font-size: 30px;
+    }
+.common-text{
+    font-size: 14px;
+}
+    .banner-container .banner-left h2, .about-right h2 {
+        font-size: 40px;
+    }
+
+    .primebtn {
+        font-size: 14px;
+        padding: 16px 35px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .about-container.grid {
+        height: auto;
+        margin-top: 40px;
+    }
+    .about-right blockquote {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:536px) {
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .banner-container.grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-container .banner-left {
+        padding: 5%;
+        background-image: url('./images/Group\ 14.png');
+        margin: auto;
+        background-size: contain;
+    }
+
+    .banner-container {
+        background: none;
+    }
+    .banner-left{
+        order: 2;
+    }
+    .banner-container .banner-right {
+        width: 75%;
+        margin: auto;
+    }
+    .about-right {
+        text-align: center;
+        width: 86%;
+        margin: auto;
+        margin-top: 65px;
+    }
+    .about-container.grid {
+        grid-template-columns: 1fr;
+    }
+
 }
