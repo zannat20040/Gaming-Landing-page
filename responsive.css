@@ -82,9 +82,9 @@
         flex-wrap: wrap;
     gap: 35px 30px;
     }
-    .card .hover-sec {
+    /* .card .hover-sec {
         height: 84%;
-    }
+    } */
 
 }
 
@@ -152,10 +152,10 @@
     .game {
         width: 155px;
     }
-    .card .hover-sec {
+    /* .card .hover-sec {
         position: absolute;
         height: 87%;
-    }
+    } */
    
 
 }
